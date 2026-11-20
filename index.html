@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>My Most Hideous Page Ever</title>
+
+		<!-- 
+			The <link> element is used to connect other resources to our document. Since it links resources it is self closing as well as it uses the href attribute to refer to the file we want to connect to. In this case, we establish a link with a 'relationship' (rel) as a stylesheet.
+
+			normalize.css is a pre-built stylesheet that attempts to 'normalize' differences in how different browsers render an HTML page by default. More info (and the most recent version) is available at https://necolas.github.io/normalize.css/
+		-->
+		<link rel="stylesheet" href="css/normalize.css"> 
+		<!-- 
+			Keep in mind that the order of our stylesheets will dictate the order in which styles are applied. If we want our styles to override the 'normalizing' that normalize.css does, we should load it after our normalize.css file.
+		-->
+		<link rel="stylesheet" href="css/main.css"> 
+		<link rel="stylesheet" href="css/fonts.css"> 
+
+
+	</head>
+
+	<body>
+
+		<h1>My Most Hideous Page Ever</h1>
+
+		<p>
+			A robot is a <em>dangerous</em>, often humanoid, autonomous being that will take over soon. We must be vigilant. We must be wary. We must prepare to stop the robots from taking over. Transformers are here and are real. Robots such as Honda's <abbr title="Advanced Step in Innovative Mobility">ASIMO</abbr> is proof of that. They walk, and soon enough they will also be able to talk and drive us around. That is dangerous.
+		</p>
+
+		<!--
+			We have started to add classes to our HTML elements to help style each of them differently. It is a good practice to get into instead of styling the elements by their element names (i.e. selecting by just nav or a) as it means it will be easier to track down what styling is being applied to which element.
+		-->
+		<nav class="nav-main">
+
+			<a href="#robot" class="nav-main-item">See a Robot</a>
+			<a href="#comments" class="nav-main-item">Comment on Robots</a>
+		
+		</nav>
+
+
+		<section id="robot">
+		
+			<h2>See a Robot</h2>
+		
+			<figure>
+
+				<img src="img/robot.jpg" alt="A toy robot with a menacing expression">
+				<figcaption>Beware of robots like this.</figcaption>
+
+			</figure>
+
+			<h3>Links about robots:</h3>
+			<ol>
+			
+				<li>
+					<a href="https://en.wikipedia.org/wiki/Robot" target="_blank">Wikipedia on Robots</a>
+				</li>
+				<li>
+					<a href="https://www.shutterstock.com/search/robots?search_source=base_keyword" target="_blank">Photos of robots</a>
+				</li>
+			</ol>
+
+
+			<h3>The code of how robots deal with humans:</h3>
+
+			<code>
+				# Human protocol<br>
+				robot.see("human", function(seen) {<br>
+				seen.destroy();<br>
+				});<br>
+			</code>
+
+			<h3>What the robot does as a result:</h3>
+
+			<samp>EXTERMINATE! EXTERMINATE! EXTERMINATE!</samp>
+
+		</section>
+
+
+		<section id="comments">
+
+			<h2>Comment on Robots</h2>
+			<p><strong>Commenting is currently closed.</strong></p>
+
+		</section>
+
+
+	</body>
+</html>

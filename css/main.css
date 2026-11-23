@@ -297,6 +297,15 @@ li {
   overflow-wrap: anywhere;
 }
 
+.eyebrow {
+  font-size: 0.73rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+
+
 
 /* ==================== TYPOGRAPHY EXAMPLES ==================== */
 
@@ -402,7 +411,7 @@ li {
 }
 
 .btn-secondary {
-  background: transparent;
+  background: #F7E8C7;
 }
 
 .btn-secondary:hover {
@@ -716,4 +725,223 @@ li {
     transform: none;
   }
 
+}
+
+
+
+
+
+
+/* ==========================================================
+   P03 PORTFOLIO FOOTER — COASTAL SERENITY
+   Shared across homepage and style guide
+   ========================================================== */
+
+.portfolio-footer {
+  background: linear-gradient(
+    125deg,
+    #E6E3F4 0%,
+    #C9C3E8 65%,
+    #DCD7E4 100%
+  );
+
+  color: #4B486D;
+  border-top: 1px solid #C9C3E8;
+  padding: 3.5rem clamp(1.5rem, 5vw, 4rem) 1.5rem;
+  margin-top: 4rem;
+}
+
+/* Main three-column layout */
+.footer-main {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+/* Logo and portfolio description */
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 2rem;
+  font-style: italic;
+  line-height: 1.3;
+
+  color: #4B486D;
+  text-decoration: none;
+}
+
+.footer-logo-mark {
+  font-size: 1.7rem;
+  color: #817BAD;
+}
+
+.footer-logo:hover {
+  color: #4B486D;
+}
+
+.footer-description {
+  max-width: 350px;
+  margin: 0.75rem 0;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+
+/* Footer navigation columns */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.footer-heading {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  margin: 0 0 0.5rem;
+  color: #4B486D;
+}
+
+/* Footer copyright row */
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+
+  border-top: 1px solid #A8A0CA;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  line-height: 1.7;
+}
+
+/* Responsive footer */
+@media (max-width: 750px) {
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-footer {
+    padding: 2.5rem 1.5rem 1.5rem;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+
+
+/* ==========================================================
+   SHARED ANIMATED UNDERLINE
+   Navbar + footer links
+   ========================================================== */
+
+.animated-link,
+.home-nav .links a,
+.demo-nav .links a {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+
+  color: #4B486D;
+  text-decoration: none;
+
+  transition: color 0.25s ease;
+}
+
+/* Hidden underline */
+.animated-link::after,
+.home-nav .links a::after,
+.demo-nav .links a::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  bottom: -5px;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: #4B486D;
+  border-radius: 2px;
+
+  transform: scaleX(0);
+  transform-origin: left center;
+
+  transition: transform 0.3s ease;
+}
+
+/* Reveal underline */
+.animated-link:hover::after,
+.animated-link:focus-visible::after,
+.home-nav .links a:hover::after,
+.home-nav .links a:focus-visible::after,
+.demo-nav .links a:hover::after,
+.demo-nav .links a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* Keep current page visibly underlined */
+.home-nav .links a[aria-current="page"]::after,
+.demo-nav .links a[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+/* Preserve accessible focus indicators */
+.animated-link:focus-visible,
+.home-nav .links a:focus-visible,
+.demo-nav .links a:focus-visible {
+  outline: 2px solid #4B486D;
+  outline-offset: 6px;
+  border-radius: 2px;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .animated-link,
+  .home-nav .links a,
+  .demo-nav .links a,
+  .animated-link::after,
+  .home-nav .links a::after,
+  .demo-nav .links a::after {
+    transition: none;
+  }
 }

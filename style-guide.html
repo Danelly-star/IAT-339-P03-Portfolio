@@ -766,53 +766,123 @@
       </section>
 
       <!-- ==================== FOOTER ==================== -->
+      
+  
+
       <section id="footer" class="guide-section">
 
         <div class="section-heading">
           <h2>Footer</h2>
         </div>
 
+        <p>
+          The portfolio footer uses the Coastal Serenity colour
+          palette, a soft lavender gradient, and consistent
+          typography. It includes portfolio branding, navigation,
+          and social media links.
+        </p>
+
         <article class="component">
 
-          <h3>Simple Footer</h3>
+          <h3>Portfolio Footer</h3>
 
           <p class="small muted">
-            CSS selector: <code>.sample-footer</code>
+            CSS selectors:
+            <code>.portfolio-footer</code>,
+            <code>.footer-main</code>,
+            <code>.footer-column</code>,
+            <code>.animated-link</code>
           </p>
 
           <p class="component-label">Sample code</p>
 
-          <code class="code-sample">&lt;footer class=&quot;sample-footer&quot;&gt;
+          <pre class="code-sample"><code>&lt;footer class="portfolio-footer"&gt;
+        &lt;div class="footer-main"&gt;
 
-  &lt;span&gt;© 2026 Danelly J.&lt;/span&gt;
+          &lt;div class="footer-brand"&gt;
+            &lt;a href="index.html" class="footer-logo"&gt;
+              ✧ Danelly J.
+            &lt;/a&gt;
+            &lt;p&gt;3D Modeling · Animation · Environment Design&lt;/p&gt;
+          &lt;/div&gt;
 
-  &lt;a href=&quot;style-guide.html&quot;&gt;Style Guide&lt;/a&gt;
+          &lt;nav class="footer-column" aria-label="Footer navigation"&gt;
+            &lt;h2 class="footer-heading"&gt;Explore&lt;/h2&gt;
+            &lt;a href="index.html" class="animated-link"&gt;Home&lt;/a&gt;
+            &lt;a href="index.html#projects" class="animated-link"&gt;Projects&lt;/a&gt;
+            &lt;a href="index.html#about" class="animated-link"&gt;About&lt;/a&gt;
+          &lt;/nav&gt;
 
-&lt;/footer&gt;</code>
+          &lt;div class="footer-column"&gt;
+            &lt;h2 class="footer-heading"&gt;Connect&lt;/h2&gt;
+            &lt;a href="#" class="animated-link"&gt;LinkedIn&lt;/a&gt;
+            &lt;a href="#" class="animated-link"&gt;Instagram&lt;/a&gt;
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+      &lt;/footer&gt;</code></pre>
 
           <p class="component-label">Rendered element</p>
 
-          <div class="rendered">
+          <div class="footer-preview">
 
-            <footer class="sample-footer">
+            <footer class="portfolio-footer">
 
-              <span>© 2026 Danelly J.</span>
+              <div class="footer-main">
 
-              <a href="style-guide.html">
-                Style Guide
-              </a>
+                <div class="footer-brand">
+                  <a href="index.html" class="footer-logo">
+                    <span class="footer-logo-mark"
+                          aria-hidden="true">✧</span>
+                    Danelly J.
+                  </a>
 
-              <a href="index.html">
-                Home
-              </a>
+                  <p class="footer-description">
+                    3D Modeling · Animation · Environment Design
+                  </p>
+                </div>
+
+                <nav class="footer-column"
+                    aria-label="Footer component preview navigation">
+
+                  <h2 class="footer-heading">Explore</h2>
+
+                  <a href="index.html" class="animated-link">Home</a>
+                  <a href="index.html#projects"
+                    class="animated-link">Projects</a>
+                  <a href="index.html#about"
+                    class="animated-link">About</a>
+                  <a href="style-guide.html"
+                    class="animated-link">Style Guide</a>
+                </nav>
+
+                <div class="footer-column">
+                  <h2 class="footer-heading">Connect</h2>
+
+                  <a href="#" class="animated-link">LinkedIn ↗</a>
+                  <a href="#" class="animated-link">Instagram ↗</a>
+                </div>
+
+              </div>
+
+              <div class="footer-bottom">
+                <p>© 2026 Danelly J. All rights reserved.</p>
+                <p>Designed with creativity &amp; care ✧</p>
+              </div>
 
             </footer>
 
           </div>
 
+          <p class="small muted">
+            Hover or keyboard-focus the navigation links to
+            preview the animated underline effect.
+          </p>
+
         </article>
 
       </section>
+
 
     </main>
 

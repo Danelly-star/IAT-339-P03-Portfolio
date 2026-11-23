@@ -1,109 +1,823 @@
-<!DOCTYPE html>
-<html>
 
-  <head>
+<!doctype html>
+<html lang="en">
 
-    <meta charset="utf-8">
-    <title>Style Guide Template</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="Danelly J. — 3D art, animation, and environment design portfolio."
+  >
 
-    <link href="css/main.css" rel="stylesheet">
+  <title>Style Guide | Danelly J.</title>
 
-  </head>
+  <link rel="stylesheet" href="css/main.css">
+</head>
 
-  <body>
+<body>
 
-    <h1>Style Guide Template</h1>
+  <div class="site-shell guide-layout">
 
-    <p>A template you can use to start building out your own style guides with.</p>
+    <!-- ==================== SIDEBAR ==================== -->
+    <aside class="guide-sidebar">
 
+      <a href="index.html" class="brand">
+        <span class="brand-mark">✧</span> Danelly J.
+      </a>
 
-    <nav>
       
-      <p>
-        Go to:
-        <a href="#interactive_elements">Interactive Elements</a>,
-        <a href="#text_elements">Text Elements</a>,
-        <a href="#combined_elements">Combined Elements</a>,
+      <p class="sidebar-title">
+        Style<br>
+        Guide
       </p>
 
-    </nav>
+      <nav class="guide-menu" aria-label="Style guide sections">
+        <a href="#identity">Visual Identity</a>
+        <a href="#colours">Colour Palette</a>
+        <a href="#gradients">Gradients</a>
+        <a href="#typography">Typography</a>
+        <a href="#links">Text &amp; Links</a>
+        <a href="#buttons">Buttons</a>
+        <a href="#navigation">Navigation</a>
+        <a href="#cards">Project Cards</a>
+        <a href="#skills">Skills &amp; Tags</a>
+        <a href="#forms">Contact Elements</a>
+        <a href="#media">Media &amp; Accessibility</a>
+        <a href="#footer">Footer</a>
+      </nav>
 
+    </aside>
 
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main class="guide-content" id="main">
 
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
+      <!-- STYLE GUIDE HERO -->
+      <header class="guide-hero">
 
-      <!-- Default Button styling section -->
-      <section>
+        <p class="eyebrow">My Portfolio Style Guide</p>
 
-        <h2>Navigation Button</h2>
+        <h1>
+          Style <em>Guide</em>
+        </h1>
 
-        <h3>CSS selector:</h3>
-        <p>.button-nav</p>
+        <a class="btn btn-secondary" href="index.html">
+          View homepage →
+        </a>
 
-        <h3>Sample code:</h3>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+      </header>
 
-        <h3>Rendered element:</h3>
-        <a class="button" href="#">Default Button</a>
+      <!-- ==================== VISUAL IDENTITY ==================== -->
+      <section id="identity" class="guide-section">
+
+        <div class="section-heading">
+          <h2>Visual Identity</h2>
+        </div>
+
+        <p class="intro">
+          A coastal-inspired visual system for a portfolio about
+          3D modeling, animation, and interactive environments.
+          Soft colour and editorial type express imagination;
+          precise monospaced details reflect the technical side
+          of making digital worlds.
+        </p>
+
+        <div class="two-col">
+
+          <div class="component">
+
+            <h3>Creative Direction</h3>
+
+            <p>
+              Soft · Elegant · Imaginative · Technical
+            </p>
+
+            <p class="small muted">
+              Use quiet surfaces and restrained decoration
+              so the actual project work remains the focus.
+            </p>
+
+          </div>
+
+          <div class="component" style="background: var(--sunset);">
+
+            <p class="eyebrow">Portfolio ethos</p>
+
+            <h3>Worlds in the Making</h3>
+
+            <p>
+              Creating digital worlds through modeling,
+              movement, atmosphere, and interaction.
+            </p>
+
+          </div>
+
+        </div>
 
       </section>
 
-      <section>
-        <h2>In-text link</h2>
+      <!-- ==================== COLOUR PALETTE ==================== -->
+      <section id="colours" class="guide-section">
+
+        <div class="section-heading">
+          <h2>Colour Palette</h2>
+        </div>
+
+        <p>
+          Six reusable colour tokens, including a deeper
+          text colour for legibility.
+        </p>
+
+        <div class="swatch-grid">
+
+          <!-- LAVENDER MIST -->
+          <div>
+            <div
+              class="swatch"
+              style="background: #E6E3F4;"
+            ></div>
+
+            <p class="swatch-info">
+              <strong>Lavender Mist</strong>
+              #E6E3F4 · Soft background
+            </p>
+          </div>
+
+          <!-- COASTAL LILAC -->
+          <div>
+            <div
+              class="swatch"
+              style="background: #C9C3E8;"
+            ></div>
+
+            <p class="swatch-info">
+              <strong>Coastal Lilac</strong>
+              #C9C3E8 · Accent and surfaces
+            </p>
+          </div>
+
+          <!-- OCEAN FOAM -->
+          <div>
+            <div
+              class="swatch"
+              style="background: #F8F6F0;"
+            ></div>
+
+            <p class="swatch-info">
+              <strong>Ocean Foam</strong>
+              #F8F6F0 · Primary canvas
+            </p>
+          </div>
+
+          <!-- DRIFTWOOD -->
+          <div>
+            <div
+              class="swatch"
+              style="background: #DCD7E4;"
+            ></div>
+
+            <p class="swatch-info">
+              <strong>Driftwood</strong>
+              #DCD7E4 · Borders and muted panels
+            </p>
+          </div>
+
+          <!-- SUNLIT SAND -->
+          <div>
+            <div
+              class="swatch"
+              style="background: #F7E8C7;"
+            ></div>
+
+            <p class="swatch-info">
+              <strong>Sunlit Sand</strong>
+              #F7E8C7 · Warm accents
+            </p>
+          </div>
+
+          <!-- DEEP IRIS -->
+          <div>
+            <div
+              class="swatch"
+              style="background: #4B486D;"
+            ></div>
+
+            <p class="swatch-info">
+              <strong>Deep Iris</strong>
+              #4B486D · Text and contrast
+            </p>
+          </div>
+
+        </div>
+
       </section>
 
-      <section>
-        <h2>Submit/Reset Buttons</h2>
+      <!-- ==================== GRADIENTS ==================== -->
+      <section id="gradients" class="guide-section">
+
+        <div class="section-heading">
+          <h2>Gradients</h2>
+        </div>
+
+        <p>
+          Gradients use only colours from the palette.
+          Keep most content surfaces neutral to avoid
+          visual clutter.
+        </p>
+
+        <div class="gradient-grid">
+
+          <!-- MISTY DREAM -->
+          <div>
+
+            <div
+              class="gradient-swatch"
+              style="background: var(--misty);"
+            ></div>
+
+            <p class="swatch-info">
+              <strong>Misty Dream</strong>
+              Background sections
+            </p>
+
+            <p class="token">
+              <code>background: var(--misty);</code>
+            </p>
+
+          </div>
+
+          <!-- LILAC HAZE -->
+          <div>
+
+            <div
+              class="gradient-swatch"
+              style="background: var(--haze);"
+            ></div>
+
+            <p class="swatch-info">
+              <strong>Lilac Haze</strong>
+              Featured panels
+            </p>
+
+            <p class="token">
+              <code>background: var(--haze);</code>
+            </p>
+
+          </div>
+
+          <!-- SUNSET GLOW -->
+          <div>
+
+            <div
+              class="gradient-swatch"
+              style="background: var(--sunset);"
+            ></div>
+
+            <p class="swatch-info">
+              <strong>Sunset Glow</strong>
+              Warm accents
+            </p>
+
+            <p class="token">
+              <code>background: var(--sunset);</code>
+            </p>
+
+          </div>
+
+        </div>
+
+        <p class="component-label">Sample code</p>
+
+        <code class="code-sample">background: linear-gradient(135deg, #E6E3F4, #F8F6F0);</code>
+
       </section>
 
-      <section>
-        <h2>Text Input Field</h2>
+      <!-- ==================== TYPOGRAPHY ==================== -->
+      <section id="typography" class="guide-section">
+
+        <div class="section-heading">
+          <h2>Typography</h2>
+        </div>
+
+        <p>
+          <strong>Bodoni Moda</strong> is used for expressive
+          display typography.
+
+          <strong>IBM Plex Mono</strong> is used for body copy,
+          navigation, code, and technical details.
+        </p>
+
+        <!-- HEADING EXAMPLES -->
+        <div class="type-demo">
+
+          <p class="eyebrow">Display / Bodoni Moda</p>
+
+          <h1>Heading One</h1>
+          <h2>Heading Two</h2>
+          <h3>Heading Three</h3>
+          <h4>Heading Four</h4>
+
+        </div>
+
+        <!-- BODY TEXT EXAMPLES -->
+        <div class="type-demo">
+
+          <p class="eyebrow">Body / IBM Plex Mono</p>
+
+          <p>
+            Designing thoughtful digital environments
+            through 3D art, animation, and interaction.
+            Paragraph text uses a generous line height
+            to stay readable.
+          </p>
+
+          <p class="small muted">
+            Small supporting text — for captions and
+            project metadata.
+          </p>
+
+        </div>
+
+        <p class="component-label">Sample code</p>
+
+        <code class="code-sample">&lt;h2&gt;Selected Projects&lt;/h2&gt;
+
+&lt;p&gt;3D modeling, animation, and environment design.&lt;/p&gt;</code>
+
       </section>
 
-    </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
+      <!-- ==================== TEXT AND LINKS ==================== -->
+      <section id="links" class="guide-section">
 
+        <div class="section-heading">
+          <h2>Text &amp; Links</h2>
+        </div>
 
+        <article class="component">
 
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
+          <h3>In-text Link</h3>
 
-      <section>
-        <h2>Headings</h2>
+          <p class="small muted">
+            CSS selector: <code>.inline-link</code>
+          </p>
+
+          <p class="component-label">Sample code</p>
+
+          <code class="code-sample">&lt;p&gt;Explore my &lt;a class=&quot;inline-link&quot; href=&quot;index.html#projects&quot;&gt;projects&lt;/a&gt;.&lt;/p&gt;</code>
+
+          <p class="component-label">Rendered element</p>
+
+          <div class="rendered">
+
+            <p>
+              Explore my
+              <a class="inline-link" href="index.html#projects">
+                projects
+              </a>.
+            </p>
+
+          </div>
+
+        </article>
+
       </section>
 
-      <section>
-        <h2>Paragraphs</h2>
+      <!-- ==================== BUTTONS ==================== -->
+      <section id="buttons" class="guide-section">
+
+        <div class="section-heading">
+          <h2>Buttons</h2>
+        </div>
+
+        <article class="component">
+
+          <h3>Primary, Secondary &amp; Text Links</h3>
+
+          <p class="small muted">
+            CSS selector:
+            <code>.btn, .btn-primary, .btn-secondary, .btn-text</code>
+          </p>
+
+          <p class="component-label">Sample code</p>
+
+          <code class="code-sample">&lt;a class=&quot;btn btn-primary&quot; href=&quot;index.html#projects&quot;&gt;Explore Projects ↗&lt;/a&gt;
+
+&lt;a class=&quot;btn btn-secondary&quot; href=&quot;index.html#about&quot;&gt;About Me&lt;/a&gt;
+
+&lt;a class=&quot;btn btn-text&quot; href=&quot;index.html&quot;&gt;Home →&lt;/a&gt;</code>
+
+          <p class="component-label">Rendered element</p>
+
+          <div class="rendered">
+
+            <div class="button-row">
+
+              <a
+                class="btn btn-primary"
+                href="index.html#projects"
+              >
+                Explore Projects ↗
+              </a>
+
+              <a
+                class="btn btn-secondary"
+                href="index.html#about"
+              >
+                About Me
+              </a>
+
+              <a
+                class="btn btn-text"
+                href="index.html"
+              >
+                Home →
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
       </section>
 
-      <section>
-        <h2>Bulleted Lists</h2>
+      <!-- ==================== NAVIGATION ==================== -->
+      <section id="navigation" class="guide-section">
+
+        <div class="section-heading">
+          <h2>Navigation</h2>
+        </div>
+
+        <article class="component">
+
+          <h3>Main Navigation</h3>
+
+          <p class="small muted">
+            CSS selector: <code>.demo-nav</code>
+          </p>
+
+          <p class="component-label">Sample code</p>
+
+          <code class="code-sample">&lt;nav class=&quot;demo-nav&quot; aria-label=&quot;Portfolio navigation&quot;&gt;
+
+  &lt;a href=&quot;index.html&quot;&gt;Danelly J.&lt;/a&gt;
+
+  &lt;a href=&quot;index.html#projects&quot;&gt;Projects&lt;/a&gt;
+
+&lt;/nav&gt;</code>
+
+          <p class="component-label">Rendered element</p>
+
+          <div class="rendered">
+
+            <nav
+              class="demo-nav"
+              aria-label="Example portfolio navigation"
+            >
+
+              <a class="brand" href="index.html">
+                ✧ Danelly J.
+              </a>
+
+              <div class="links">
+
+                <a href="index.html">Home</a>
+
+                <a href="index.html#projects">
+                  Projects
+                </a>
+
+                <a href="index.html#about">
+                  About
+                </a>
+
+                <a href="index.html#contact">
+                  Contact
+                </a>
+
+              </div>
+
+            </nav>
+
+          </div>
+
+        </article>
+
       </section>
 
-      <section>
-        <h2>Numbered Lists</h2>
+      <!-- ==================== PROJECT CARDS ==================== -->
+      <section id="cards" class="guide-section">
+
+        <div class="section-heading">
+          <h2>Project Cards</h2>
+        </div>
+
+        <p>
+          These are deliberately typographic placeholders
+          until original project screenshots and approved
+          process images are ready.
+        </p>
+
+        <p class="component-label">Sample code</p>
+
+        <code class="code-sample">&lt;article class=&quot;project-card&quot;&gt;
+
+  &lt;div class=&quot;project-art&quot;&gt;Project image placeholder&lt;/div&gt;
+
+  &lt;div class=&quot;project-body&quot;&gt;&lt;h3&gt;Project title&lt;/h3&gt;&lt;/div&gt;
+
+&lt;/article&gt;</code>
+
+        <p class="component-label">Rendered elements</p>
+
+        <div class="project-grid">
+
+          <!-- PROJECT 1 -->
+          <article class="project-card">
+
+            <div class="project-art">
+              Quacker's Quest ✧
+            </div>
+
+            <div class="project-body">
+
+              <p class="eyebrow">
+                3D animated short film
+              </p>
+
+              <h3>Quacker's Quest</h3>
+
+              <p class="small">
+                Modeling, animation, and environment
+                work in Autodesk Maya.
+              </p>
+
+              <span class="tag">MAYA</span>
+              <span class="tag">ANIMATION</span>
+
+            </div>
+
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="project-card">
+
+            <div class="project-art warm">
+              Interactive Worlds ✧
+            </div>
+
+            <div class="project-body">
+
+              <p class="eyebrow">
+                Interactive environment
+              </p>
+
+              <h3>Unreal Environment</h3>
+
+              <p class="small">
+                An individual exploration of environments
+                and Blueprint interactions.
+              </p>
+
+              <span class="tag">UNREAL ENGINE</span>
+              <span class="tag">BLUEPRINTS</span>
+
+            </div>
+
+          </article>
+
+        </div>
+
       </section>
 
-    </section>
-    <!-- // TEXT ELEMENTS SECTION -->
+      <!-- ==================== SKILLS AND TAGS ==================== -->
+      <section id="skills" class="guide-section">
 
+        <div class="section-heading">
+          <h2>Skills &amp; Tags</h2>
+        </div>
 
+        <article class="component">
 
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
+          <h3>Skill Tags</h3>
 
-      <section>
-        <h2>Main Navigation</h2>
+          <p class="small muted">
+            CSS selector: <code>.tag</code>
+          </p>
+
+          <p class="component-label">Sample code</p>
+
+          <code class="code-sample">&lt;span class=&quot;tag&quot;&gt;AUTODESK MAYA&lt;/span&gt;</code>
+
+          <p class="component-label">Rendered element</p>
+
+          <div class="rendered">
+
+            <div class="tag-row">
+
+              <span class="tag">AUTODESK MAYA</span>
+              <span class="tag">UNREAL ENGINE</span>
+              <span class="tag">3D MODELING</span>
+              <span class="tag">ANIMATION</span>
+              <span class="tag">HTML / CSS</span>
+              <span class="tag">PYTHON</span>
+
+            </div>
+
+          </div>
+
+        </article>
+
       </section>
 
-      <section>
-        <h2>Product Listing</h2>
+      <!-- ==================== CONTACT ELEMENTS ==================== -->
+      <section id="forms" class="guide-section">
+
+        <div class="section-heading">
+          <h2>Contact Elements</h2>
+        </div>
+
+        <p>
+          Optional accessible contact-field styling for
+          later development. The demonstration does not
+          send messages.
+        </p>
+
+        <article class="component">
+
+          <h3>Text Input &amp; Message Field</h3>
+
+          <p class="small muted">
+            CSS selector:
+            <code>.field input, .field textarea</code>
+          </p>
+
+          <p class="component-label">Sample code</p>
+
+          <code class="code-sample">&lt;label for=&quot;demo-name&quot;&gt;Name&lt;/label&gt;
+
+&lt;input id=&quot;demo-name&quot; type=&quot;text&quot; placeholder=&quot;Your name&quot;&gt;</code>
+
+          <p class="component-label">Rendered element</p>
+
+          <div class="rendered">
+
+            <!-- NAME FIELD -->
+            <div class="field">
+
+              <label for="demo-name">
+                Name
+              </label>
+
+              <input
+                id="demo-name"
+                type="text"
+                placeholder="Your name"
+              >
+
+            </div>
+
+            <!-- MESSAGE FIELD -->
+            <div class="field">
+
+              <label for="demo-message">
+                Message
+              </label>
+
+              <textarea
+                id="demo-message"
+                placeholder="Your message"
+              ></textarea>
+
+            </div>
+
+          </div>
+
+        </article>
+
       </section>
 
-    </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
+      <!-- ==================== MEDIA AND ACCESSIBILITY ==================== -->
+      <section id="media" class="guide-section">
 
+        <div class="section-heading">
+          <h2>Media &amp; Accessibility</h2>
+        </div>
 
-  </body>
+        <div class="two-col">
+
+          <!-- MEDIA CONVENTIONS -->
+          <div class="component">
+
+            <h3>Media Conventions</h3>
+
+            <ul>
+              <li>
+                Use original project screenshots with
+                meaningful alt text.
+              </li>
+
+              <li>
+                Use <code>figure</code> and
+                <code>figcaption</code> for process evidence.
+              </li>
+
+              <li>
+                Preserve image proportions; avoid
+                stretched artwork.
+              </li>
+
+              <li>
+                Credit third-party assets and collaborators.
+              </li>
+            </ul>
+
+          </div>
+
+          <!-- ACCESSIBILITY -->
+          <div class="component">
+
+            <h3>Accessibility</h3>
+
+            <ul>
+              <li>
+                Maintain visible keyboard focus states.
+              </li>
+
+              <li>
+                Use semantic headings and landmarks.
+              </li>
+
+              <li>
+                Use Deep Iris on pale backgrounds
+                for body text.
+              </li>
+
+              <li>
+                Respect reduced-motion preferences
+                and responsive layouts.
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ==================== FOOTER ==================== -->
+      <section id="footer" class="guide-section">
+
+        <div class="section-heading">
+          <h2>Footer</h2>
+        </div>
+
+        <article class="component">
+
+          <h3>Simple Footer</h3>
+
+          <p class="small muted">
+            CSS selector: <code>.sample-footer</code>
+          </p>
+
+          <p class="component-label">Sample code</p>
+
+          <code class="code-sample">&lt;footer class=&quot;sample-footer&quot;&gt;
+
+  &lt;span&gt;© 2026 Danelly J.&lt;/span&gt;
+
+  &lt;a href=&quot;style-guide.html&quot;&gt;Style Guide&lt;/a&gt;
+
+&lt;/footer&gt;</code>
+
+          <p class="component-label">Rendered element</p>
+
+          <div class="rendered">
+
+            <footer class="sample-footer">
+
+              <span>© 2026 Danelly J.</span>
+
+              <a href="style-guide.html">
+                Style Guide
+              </a>
+
+              <a href="index.html">
+                Home
+              </a>
+
+            </footer>
+
+          </div>
+
+        </article>
+
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+
 </html>
